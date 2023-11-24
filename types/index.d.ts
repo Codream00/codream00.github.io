@@ -241,6 +241,13 @@ export interface Certifications {
   link?: string;
 }
 
+export interface Awards {
+  body?: string;
+  name?: string;
+  year?: string;
+  link?: string;
+}
+
 export interface ExternalProjects {
   title: string;
   description: string;
@@ -294,6 +301,11 @@ export interface Config {
    * Certifications list
    */
   certifications?: Array<Certifications>;
+
+  /**
+   * Awards list
+   */
+  awards?: Array<Awards>;
 
   /**
    * Education list

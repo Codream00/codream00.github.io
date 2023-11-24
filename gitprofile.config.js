@@ -2,8 +2,8 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
+    username: 'Codream00', // Your GitHub org/user name. (Required)
+    sortBy: 'updated', // stars | updated
     limit: 10, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
@@ -11,103 +11,101 @@ const config = {
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: '',
+    twitter: '',
+    mastodon: '',
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://arifszn.com',
+    website: 'https://codream00.github.io/',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'codream00@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
     'JavaScript',
     'React.js',
     'Node.js',
     'Nest.js',
+    'Next.js',
     'MySQL',
     'PostgreSQL',
     'Git',
     'Docker',
-    'PHPUnit',
     'CSS',
-    'Antd',
     'Tailwind',
   ],
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  /* certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com'
-    },
-  ], */
+  // experiences: [
+  //   {
+  //     company: 'Company Name',
+  //     position: 'Position',
+  //     from: 'September 2021',
+  //     to: 'Present',
+  //     companyLink: 'https://example.com',
+  //   },
+  //   {
+  //     company: 'Company Name',
+  //     position: 'Position',
+  //     from: 'July 2019',
+  //     to: 'August 2021',
+  //     companyLink: 'https://example.com',
+  //   },
+  // ],
+  // certifications: [
+  //   {
+  //     name: '',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   education: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Sungkyunkwan University',
+      degree: 'Software(Computer Science) Major',
+      from: '2019',
+      to: 'now',
     },
+  ],
+  awards: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      name: '2023 Seoul Intelligent Internet of Things (AIoT) Hackathon Competition',
+      body: 'Development of applications for ecosystem exploration and investigation, Third prize',
+      year: 'October 2023',
+      link: '',
     },
   ],
 
   // To hide the `My Projects` section, keep it empty.
-  externalProjects: [
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-  ],
+  // externalProjects: [
+  //   {
+  //     title: 'Project Name',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+  //     imageUrl: 'https://via.placeholder.com/250x250',
+  //     link: 'https://example.com',
+  //   },
+  //   {
+  //     title: 'Project Name',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+  //     imageUrl: 'https://via.placeholder.com/250x250',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
@@ -119,11 +117,11 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'wireframe',
+    defaultTheme: 'light',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme

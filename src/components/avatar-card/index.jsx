@@ -54,6 +54,11 @@ const AvatarCard = ({ profile, loading, avatarRing, resume }) => {
               ? skeleton({ width: 'w-48', height: 'h-5' })
               : profile.bio}
           </div>
+          <div className="mt-3 text-base-content text-opacity-60 font-mono">
+            I am a student majoring in computer science and hope to become a
+            developer. <br />I have been studying web development since 2019 and
+            have experience creating multiple websites.
+          </div>
         </div>
         {resume?.fileUrl &&
           (loading ? (
